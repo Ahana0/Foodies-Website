@@ -1,0 +1,61 @@
+/* CSS RESET */
+*{
+    margin:0px;
+    padding: 0px;;
+}
+/* CSS GLOBAL VARIABLE */
+:root{
+    --navbar-height:60px;
+}
+/* NAVIGATION BAR */
+#navbar{
+    display: flex;
+    position: relative;
+    height:68px;
+    border:2px solid red;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+   
+    
+}
+#navbar ul li{
+    font-size: 1.2rem;
+    list-style: none;
+   
+}
+#navbar ul li a{
+    display: block;
+   text-decoration: none;
+    padding: 3px 22px;
+   border-radius: 20px;
+   color:rgb(75, 70, 70);
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: .4;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+#logo img{
+    height: 170px;
+    width: 140px;
+    margin-left: -10px;
+    /* border: 2px solid green; */
+    margin-top: 63px;
+
+}
+#logo{
+    margin-bottom: 20px;
+   }
