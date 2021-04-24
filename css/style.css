@@ -66,7 +66,9 @@
        justify-content: center;
        align-items: center;
        padding: 3px 200px;
-       height: 527px;
+       height: 470px;
+       top:0px;
+       left:0px;
    }
 #home::before{
     content: "";
@@ -105,11 +107,13 @@
 .h-primary{
     font-size: 2.8rem;
     padding: 12px;
-    margin-top: 60px;
+    margin-top: 90px;
+    font-family:'Bree Serif', serif;
 } 
 .h-secondry{
     font-size: 1.8rem;
     padding: 12px;
+    font-family:'Bree Serif', serif;
 }
 
 /* serivecs center */
@@ -124,7 +128,7 @@
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(235, 156, 83);
     transition-property: background-color;
-    transition-duration: 2s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
 #services .box:hover{
@@ -138,4 +142,65 @@
 }
 .center{
     text-align: center;
+}
+.client-section{
+    height: 340px;
+    position: relative;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 85px;
+}
+.client-item{
+    padding: 34px;
+}
+.client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg3.jpg) no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family:'Bree Serif', serif;
+}
+#contact-box input,textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 12px;
+
+}
+footer{
+    color:white;
+    background-color: rgb(48, 47, 47);
+    padding:9px 20px;
 }
