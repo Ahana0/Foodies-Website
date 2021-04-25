@@ -48,6 +48,31 @@
     background-color: white;
    
 }
+#nav-btn{
+    display: flex;
+    /* border: 2px solid rgb(162, 113, 211); */
+    margin-left: 385px;
+    
+}
+.butn{
+   
+    align-self: flex-end;
+    padding:5px 20px;
+    border:2px solid white;
+    background-color: wheat;
+    color: rgb(233 69 69);
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family:'Bree Serif', serif;
+    cursor: pointer;
+    margin-left: 20px;
+} 
+.butn:hover{
+    color:rgb(247, 230, 199);
+    background-color: rgb(235, 156, 83);
+    
+}
 
 #logo img{
     height: 170px;
@@ -109,11 +134,13 @@
     padding: 12px;
     margin-top: 90px;
     font-family:'Bree Serif', serif;
+    color:rgb(70, 68, 68);
 } 
 .h-secondry{
     font-size: 1.8rem;
     padding: 12px;
     font-family:'Bree Serif', serif;
+    color:rgb(87, 87, 87);
 }
 
 /* serivecs center */
@@ -143,6 +170,32 @@
 .center{
     text-align: center;
 }
+/* Customer */
+#services-1{
+    margin:34px;
+    display:flex;
+}
+#services-1 .box-1{
+    border:2px solid rgb(83, 154, 235);
+    margin:3px 6px;
+    padding:34px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(102, 167, 241);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#services-1 .box-1:hover{
+    background-color:rgb(201, 233, 248); 
+}
+
+#services-1 .box-1 img{
+   height:160px;
+   display: block;
+   margin:auto;
+}
+
+/* Client */
 .client-section{
     height: 340px;
     position: relative;
@@ -170,6 +223,7 @@
 }
 #contact{
     position: relative;
+   
 }
 #contact::before{
     content: "";
@@ -179,15 +233,18 @@
     width: 100%;
     z-index: -1;
     opacity: .7;
+   
 
 }
 #contact-box{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 #contact-box form{
     width:40%;
+    margin-bottom: 20px;
 }
 #contact-box label{
     font-size: 1.2rem;
